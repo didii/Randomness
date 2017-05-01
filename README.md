@@ -11,7 +11,22 @@ Go to the [release page](https://github.com/didii/Randomness/releases), download
                           is equal to 1, a detailed report of the game is printed. For any other valid number
                           only the average number of questions that were asked is printed.
 
-## How to play
+### Understanding the program
+There are a lot of abbreviations used for the simulation. Here is preview of a single turn:
+
+    TURN 4
+    P0: 5 -> n/N
+    P1: 4 -> n/N
+    P2: 2 -> E/Y
+    P3: 2 -> n/Y
+    P4: 1 -> E/N
+    Resume: 4R1N0|5R1N0|5R1N1|6R1N7|5R2N16
+
+The first line is simply the turn count that is mentioned before every turn. Then `P0:`, `P1:`, etc. are the names of the players. After the semicolon `:` the dice roll is mentioned. After the arrow `->` the first character is either an `n` if the player landed on a normal node or an `E` for an excite node. A slash `/` is then used whereafter you see whether or not the player answered the question correctly or not (`Y` for correct, `N` for incorrect).
+
+The last line tells where everyone now is and how many points they have. It has the following format: `#R#N#`. The first number is the score of the player, then the ring index, then the node index on the ring.
+
+## How the game works
 The board is an atom (Kr). You have the core and electrons around it ordered on shells. The electrons are regarded as nodes for players to walk on. The goal is to obtain the most points by answering questions and the game ends when a player escapes from the atom.
 
 ### Setup
