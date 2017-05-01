@@ -1,6 +1,16 @@
 # Excite!
 Simulates a board game to know the average amount of turns that should be played. This was part of a project for teaching classes where we 'invented' a board game to play with the class.
 
+## Running the program
+Go to the [release page](https://github.com/didii/Randomness/releases), download the binaries and unzip it. Run the game from the command line to see the output.
+
+### Command line arguments
+    Excite.exe [NumPlayers] [NumSimulations]
+        NumPlayers        (Optional, Integer, Default = 4) How many players take part in the game.
+        NumSimulations    (Optional, Integer, Default = 1) How many games that should be simulated. If this
+                          is equal to 1, a detailed report of the game is printed. For any other valid number
+                          only the average number of questions that were asked is printed.
+
 ## How to play
 The board is an atom (Kr). You have the core and electrons around it ordered on shells. The electrons are regarded as nodes for players to walk on. The goal is to obtain the most points by answering questions and the game ends when a player escapes from the atom.
 
