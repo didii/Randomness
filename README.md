@@ -53,3 +53,4 @@ The game immediately ends if any player excites from the outer shell. Points are
 This is the atom Krypton. White nodes are normal nodes while blue ones are excite nodes.
 
 ![Board](http://i.imgur.com/gVpSJ4D.png "Sample of the board")
+Designed by Steven Van Broeck
